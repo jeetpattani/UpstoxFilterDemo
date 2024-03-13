@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#543176</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#543176</color>
+
+    <!--seekbar-->
+    <color name="seekbarPrimary">#FFA000</color>
+    <color name="seekbarPrimaryDark">#E64A19</color>
+
+    <color name="colorGreyAB">#ABB3BB</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransparent">#00000000</color>
+
+
+</resources>

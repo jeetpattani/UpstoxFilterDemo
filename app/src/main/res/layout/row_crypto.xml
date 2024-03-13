@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingHorizontal="5dp"
+        android:text="Bitcoin"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/imageViewActiveToken"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewSymbol"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingHorizontal="5dp"
+        android:text="Bitcoin"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/imageViewActiveToken"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewName" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewActiveToken"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/active_token"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewActiveCoin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/active_coin"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewNewCrypto"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/new_crypto"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewInactiveCrypto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/inactive_crypto"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewName" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/textViewSymbol" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

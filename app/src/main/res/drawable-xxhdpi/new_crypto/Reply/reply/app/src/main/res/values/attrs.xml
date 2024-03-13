@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TriangleSeekbar">
+        <attr name="seekbarColor" format="color"/>
+        <attr name="seekbarLoadingColor" format="color"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textFontName" format="string"/>
+        <attr name="textFontSize" format="dimension"/>
+        <attr name="showProgress" format="boolean"/>
+
+        <attr name="progressTextPosition" format="enum">
+            <enum name="topLeft" value="0"/>
+            <enum name="topRight" value="1"/>
+            <enum name="bottomLeft" value="2"/>
+            <enum name="bottomRight" value="3"/>
+            <enum name="center" value="4"/>
+
+        </attr>
+
+        <attr name="progress" format="float"/>
+
+
+    </declare-styleable>
+
+    <declare-styleable name="CustomSeekbar">
+        <attr name="topLeftPoint" format="dimension"/>
+        <attr name="topRightPoint" format="dimension"/>
+        <attr name="bottomLeftPoint" format="dimension"/>
+        <attr name="bottomRightPoint" format="dimension"/>
+
+
+<!--        <attr name="seekbarColor" format="color"/>-->
+<!--        <attr name="seekbarLoadingColor" format="color"/>-->
+        <!--        <attr name="textColor" format="color"/>-->
+        <!--        <attr name="textFontName" format="string"/>-->
+        <!--        <attr name="textFontSize" format="dimension"/>-->
+<!--        <attr name="showProgress" format="boolean"/>-->
+
+<!--        <attr name="progressTextPosition" format="enum">-->
+            <!--            <enum name="topLeft" value="0"/>-->
+            <!--            <enum name="topRight" value="1"/>-->
+            <!--            <enum name="bottomLeft" value="2"/>-->
+            <!--            <enum name="bottomRight" value="3"/>-->
+            <!--            <enum name="center" value="4"/>-->
+<!--        </attr>-->
+
+<!--        <attr name="progress" format="float"/>-->
+
+
+    </declare-styleable>
+</resources>

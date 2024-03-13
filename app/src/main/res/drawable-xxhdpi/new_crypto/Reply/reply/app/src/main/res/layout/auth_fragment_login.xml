@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <include
+        android:id="@+id/includeToolbar"
+        layout="@layout/auth_include_toolbar" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextUsername"
+        style="@style/pRegular.greyAB.18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_38"
+        android:layout_marginTop="@dimen/dp_41"
+        android:layout_marginEnd="@dimen/dp_18"
+        android:drawableBottom="@drawable/bg_edittext_underline"
+        android:hint="Enter your username"
+        android:imeOptions="actionNext"
+        android:paddingBottom="@dimen/dp_18"
+        android:textColorHint="@color/colorGreyAB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/includeToolbar" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextUsername2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_38"
+        android:layout_marginTop="@dimen/dp_41"
+        android:layout_marginEnd="@dimen/dp_18"
+        android:backgroundTint="#10000000"
+        android:fontFamily="@font/regular"
+        android:hint="Enter your username"
+        android:imeOptions="actionDone"
+        android:paddingBottom="@dimen/dp_18"
+        android:textColor="@color/colorGreyAB"
+        android:textColorHint="@color/colorGreyAB"
+        android:textSize="@dimen/dp_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextUsername" />
+
+<!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:src="@drawable/ic_purple_back_arrow"-->
+<!--        app:crossfade="0"-->
+<!--        app:overlay="false"-->
+<!--        app:roundPercent="0.8"-->
+<!--        app:saturation="0"-->
+<!--        app:warmth="2"-->
+<!--        />-->
+
+<!--    <SeekBar-->
+<!--        android:id="@+id/text_size_sb"-->
+<!--        style="?android:attr/progressBarStyleHorizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/dp_24"-->
+<!--        android:layout_marginStart="@dimen/dp_12"-->
+<!--        android:layout_marginTop="@dimen/dp_60"-->
+<!--        android:layout_marginEnd="@dimen/dp_12"-->
+<!--        android:max="64"-->
+<!--        android:thumb="@drawable/seek_bar_thumb"-->
+<!--        android:progressDrawable="@drawable/rising_seekbar"-->
+<!--        android:splitTrack="false"-->
+<!--        android:paddingStart="@dimen/margin_12dp"-->
+<!--        android:paddingEnd="@dimen/margin_12dp"-->
+<!--        android:progress="24" />-->
+
+
+    <com.reply.custom.TriangleSeekbar
+        android:id="@+id/triangleSeekbar"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_310"
+        app:progress="0.5"
+        app:seekbarColor="#283"
+        app:seekbarLoadingColor="@color/colorAccent"
+        app:textColor="#fff"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextUsername2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

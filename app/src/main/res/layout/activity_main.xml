@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.CryptoActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/dw_corner_30_search_shape"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:hint="Search"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="4dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCrypto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/constraintFilter"
+        app:layout_constraintTop_toBottomOf="@id/editTextSearch"
+        tools:itemCount="3"
+        tools:listitem="@layout/row_crypto" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7415150D"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:singleLine="false">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipActiveCoins"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Active Coins" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipInactiveCoins"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inactive Coins" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipOnlyTokens"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Only tokens" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipOnlyCoins"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Only Coins" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipNewCoins"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Coins" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

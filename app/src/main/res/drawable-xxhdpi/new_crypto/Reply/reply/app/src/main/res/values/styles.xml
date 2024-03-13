@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:overScrollMode">never</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textCursorDrawable">@drawable/custom_cursor</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="MyTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--    custom  base bottom sheet-->
+    <style name="CustomBottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/CustomShapeAppearanceBottomSheetDialog</item>
+    </style>
+
+    <style name="CustomShapeAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/dp_16</item>
+        <item name="cornerSizeTopLeft">@dimen/dp_16</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize5Percent" parent="">
+        <item name="cornerSize">5%</item>
+    </style>
+
+    <!--black-->
+    <style name="pBlack">
+        <item name="android:fontFamily">@font/proximanova_black</item>
+    </style>
+
+    <!--bold-->
+    <style name="pBold">
+        <item name="android:fontFamily">@font/proximanova_bold</item>
+    </style>
+
+    <!--extra bold-->
+    <style name="pExtraBold">
+        <item name="android:fontFamily">@font/proximanova_extrabold</item>
+    </style>
+
+    <!--light-->
+    <style name="pLight">
+        <item name="android:fontFamily">@font/proximanova_light</item>
+    </style>
+
+    <!--medium-->
+    <style name="pMedium">
+        <item name="android:fontFamily">@font/proximanova_medium</item>
+    </style>
+
+    <!--Regular-->
+    <style name="pRegular">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="pRegular.greyAB">
+        <item name="android:textColor">@color/colorGreyAB</item>
+    </style>
+
+    <style name="pRegular.greyAB.18">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <!--SemiBold-->
+    <style name="pSemiBold">
+        <item name="android:fontFamily">@font/proximanova_semibold</item>
+    </style>
+
+    <!--Thin-->
+    <style name="pThin">
+        <item name="android:fontFamily">@font/proximanova_thin</item>
+    </style>
+
+
+</resources>
